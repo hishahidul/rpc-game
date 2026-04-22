@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPC Final Project</title>
+    <link
+      rel="stylesheet"
+      href="style/10-rock-paper-scissors-final-project.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="gameBox">
+        <div class="box-head">
+          <p class="box-head-title">Play Rock Paper Scissors with </p>
+          <p class="auth-name">Shahidul 💮</p>
+        </div>
+        <div class="score-area">
+          <p class="player-score">Your score: <b>00</b></p>
+          <p class="tie-score">Tie score: <b>00</b></p>
+          <p class="computer-score">Computer score: <b>00</b></p>
+        </div>
+        <div class="rps-icon-show">
+          <div class="player-move-info">
+            <p class="player-move"></p>
+            <p class="player-move-text">Your Move</p>
+          </div>
+          <p class="player-vs-computer">VS</p>
+          <div class="computer-move-info">
+            <p class="computer-move"></p>
+            <p class="computer-move-text">Computer Move</p>
+          </div>
+        </div>
+        <div class="game-result"></div>
+        <div class="rpc-buttons">
+          <button class="rock-move" onclick="playGame('rock')">Rock</button>
+          <button class="paper-move" onclick="playGame('paper')">Paper</button>
+          <button class="scissors-move" onclick="playGame('scissors')">
+            Scissors
+          </button>
+        </div>
+        <div class="bottom-content">
+          <p class="user-option">
+            Choose Your Move, Rock Paper or Scissors? Or
+          </p>
+          <button class="reset-button">Reset Score</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascript/10-rock-paper-scissors-final-project.js"></script>
+  </body>
+</html>

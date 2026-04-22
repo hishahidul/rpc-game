@@ -1,0 +1,201 @@
+/* 1. Variables & Global Resets */
+:root {
+  --primary-color: #6200ff;
+  --primary-hover: #4b00db;
+  --text-dark: #1a237e;
+  --text-muted: #9d9d9d;
+  --bg-card: #ebebeb;
+  --bg-body: #ffffff;
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-body);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 2. Layout Containers */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameBox {
+  background: var(--bg-card);
+  width: 520px;
+  padding: 25px;
+  border-radius: 25px;
+  border: 1px solid #d9d9d9;
+  box-shadow: var(--shadow);
+}
+
+/* 3. Header Section */
+.box-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.box-head-title {
+  color: var(--text-dark);
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.auth-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* 4. Scoreboard Area */
+.score-area {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.player-score,
+.tie-score,
+.computer-score {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #444;
+}
+
+.score-area b {
+  display: block; /* Puts the number on a new line for better look */
+  font-size: 26px;
+  color: var(--primary-color);
+}
+
+/* 5. Battle Visuals (Icons) */
+.rps-icon-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.player-move-info, .computer-move-info {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.player-move,
+.computer-move {
+  font-size: 80px;
+  margin: 0;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.1));
+}
+
+.player-move-text,
+.computer-move-text {
+  font-size: 11px;
+  font-weight: 800;
+  margin-top: 10px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.player-vs-computer {
+  font-size: 28px;
+  font-weight: 900;
+  color: #bbb;
+  margin: 0;
+}
+
+/* 6. Results Text */
+.game-result {
+  display: none;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  min-height: 50px; /* Prevents box from jumping */
+  transition: all 0.2s ease;
+}
+
+/* 7. Action Buttons */
+.rpc-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.rpc-buttons button {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rpc-buttons button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(98, 0, 255, 0.3);
+}
+
+.rpc-buttons button:active {
+  transform: translateY(0);
+}
+
+/* 8. Bottom Navigation */
+.bottom-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.user-option {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+
+.reset-button {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--primary-color);
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.reset-button:hover {
+  color: var(--primary-hover);
+}
