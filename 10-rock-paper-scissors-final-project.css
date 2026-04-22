@@ -8,7 +8,6 @@
   --bg-body: #ffffff;
   --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
-
 body {
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   background-color: var(--bg-body);
